@@ -93,11 +93,11 @@ const Leftpanel = (props) => {
     let urlKey = info.node["title"];
     while (true) {
       if (urlKey === undefined) {
-        urlKey = ""; // Set to false to exit loop
+        urlKey = ""; 
         url.reverse();
         url.push("/" + info.node["title"]);
         urlStr = url.join("");
-        break; // Don't need this, if you set nL to false.
+        break; 
       } else {
         urlKey = myMap.get(urlKey);
         if (urlKey !== undefined) {
